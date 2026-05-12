@@ -45,12 +45,10 @@ let package = Package(
     products: [
         .library(
             name: "Realm",
-            type: .dynamic,
             targets: ["Realm"]),
         .library(
             name: "RealmSwift",
-            type: .dynamic,
-            targets: ["RealmSwift"]),
+            targets: ["Realm", "RealmSwift"]),
     ],
     dependencies: [
         .package(url: "https://github.com/realm/realm-core.git", exact: coreVersion)
